@@ -1,0 +1,19 @@
+--- origsrc/e_dbus-0.5.0.050/src/lib/dbus/Makefile.am	2008-08-17 02:42:43.000000000 -0500
++++ src/e_dbus-0.5.0.050/src/lib/dbus/Makefile.am	2008-12-08 03:49:19.659250000 -0600
+@@ -19,5 +19,5 @@
+ 
+ libedbus_la_LIBADD = \
+ @EDBUS_LIBS@
+-libedbus_la_LDFLAGS      = -version-info @version_info@
++libedbus_la_LDFLAGS      = -version-info @version_info@ -no-undefined
+ 
+--- origsrc/e_dbus-0.5.0.050/src/lib/notification/Makefile.am	2008-08-17 02:42:43.000000000 -0500
++++ src/e_dbus-0.5.0.050/src/lib/notification/Makefile.am	2008-12-08 03:50:13.565500000 -0600
+@@ -21,6 +21,6 @@
+ libenotify_la_LIBADD = \
+ @EDBUS_LIBS@ @EVAS_LIBS@ \
+ $(top_builddir)/src/lib/dbus/libedbus.la
+-libenotify_la_LDFLAGS      = -version-info @version_info@
++libenotify_la_LDFLAGS      = -version-info @version_info@ -no-undefined
+ 
+ endif

@@ -1,0 +1,5 @@
+category: X11
+requires: cygwin libdbus1_3 libedbus0 libecore0
+sdesc: "Enlightenment D-Bus utilities"
+ldesc: "This is the start of some basic convenience wrappers around dbus 
+to ease integrating dbus with EFL based applications."

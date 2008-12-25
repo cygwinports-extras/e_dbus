@@ -1,0 +1,6 @@
+category: X11
+requires: cygwin libdbus1_3 libecore0 libevas0
+external-source: e_dbus
+sdesc: "Enlightenment D-Bus wrapper library (runtime)"
+ldesc: "This is the start of some basic convenience wrappers around dbus 
+to ease integrating dbus with EFL based applications."
