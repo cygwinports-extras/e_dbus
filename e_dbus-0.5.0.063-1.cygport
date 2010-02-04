@@ -1,11 +1,10 @@
 DESCRIPTION="Enlightenment D-Bus bindings"
 HOMEPAGE="http://www.enlightenment.org/"
-SRC_URI="http://download.enlightenment.org/snapshots/2008-09-25/${P}.tar.bz2"
-PATCH_URI="0.5.0-no-undefined.patch"
+SRC_URI="http://download.enlightenment.org/snapshots/2009-12-02/${P}.tar.bz2"
 
-PKG_NAMES="${PN} libedbus0 libedbus-devel"
+PKG_NAMES="${PN} libedbus05 libedbus-devel"
 e_dbus_CONTENTS="usr/bin/*.exe usr/share/doc/"
-libedbus0_CONTENTS="usr/bin/*-0.dll"
+libedbus05_CONTENTS="usr/bin/*-05-0.dll"
 libedbus_devel_CONTENTS="usr/include/ usr/lib/"
 
 CYGCONF_ARGS="
