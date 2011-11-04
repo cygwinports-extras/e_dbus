@@ -1,5 +1,5 @@
 category: X11
-requires: libdbus1_3 libecore05 libeina05 libevas05
+requires: libdbus1_3 libecore1 libeina1 libevas1
 external-source: e_dbus
 sdesc: "Enlightenment D-Bus wrapper library (runtime)"
 ldesc: "This is the start of some basic convenience wrappers around dbus 

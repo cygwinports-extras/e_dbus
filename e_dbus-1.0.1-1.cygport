@@ -1,0 +1,21 @@
+DESCRIPTION="Enlightenment D-Bus bindings"
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+PATCH_URI="1.0.1-no-undefined.patch"
+
+PKG_NAMES="${PN} libedbus1 libedbus-devel"
+e_dbus_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libedbus1_CONTENTS="usr/bin/*-1.dll"
+libedbus_devel_CONTENTS="usr/include/ usr/lib/"
+
+DISTCLEANFILES="*.pc"
+
+CYGCONF_ARGS="
+	--disable-static
+	--disable-ebluez
+	--disable-econnman
+	--disable-ehal
+	--enable-enotify
+	--disable-eofono
+	--disable-eukit
+"
