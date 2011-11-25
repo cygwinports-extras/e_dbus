@@ -10,11 +10,12 @@ libedbus_devel_CONTENTS="usr/include/ usr/lib/"
 
 DISTCLEANFILES="*.pc"
 
+# ehal: no-op, but either it or eeze (udev) required for E17
 CYGCONF_ARGS="
 	--disable-static
 	--disable-ebluez
 	--disable-econnman
-	--disable-ehal
+	--enable-ehal
 	--enable-enotify
 	--disable-eofono
 	--disable-eukit
