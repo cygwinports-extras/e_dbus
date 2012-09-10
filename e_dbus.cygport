@@ -1,4 +1,10 @@
-DESCRIPTION="Enlightenment D-Bus bindings"
+NAME="e_dbus"
+VERSION=1.7.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Enlightenment D-Bus bindings"
+DESCRIPTION="This is the start of some basic convenience wrappers around D-Bus
+to ease integrating dbus with EFL based applications."
 HOMEPAGE="http://www.enlightenment.org/"
 SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
 PATCH_URI="1.0.1-no-undefined.patch"
@@ -10,8 +16,12 @@ libedbus_devel_CONTENTS="usr/include/ usr/lib/"
 
 DISTCLEANFILES="*.pc"
 
+DEPEND="pkgconfig(dbus-1)
+	pkgconfig(ecore)
+	pkgconfig(eina)
+	pkgconfig(evas)"
+
 CYGCONF_ARGS="
-	--disable-static
 	--disable-ebluez
 	--disable-econnman0_7x
 	--disable-ehal
@@ -19,3 +29,5 @@ CYGCONF_ARGS="
 	--disable-eofono
 	--disable-eukit
 "
+
+KEEP_LA_FILES="none"

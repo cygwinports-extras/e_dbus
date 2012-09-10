@@ -1,5 +1,0 @@
-category: X11
-requires: libdbus1_3 libedbus1 libecore1 libeina1
-sdesc: "Enlightenment D-Bus utilities"
-ldesc: "This is the start of some basic convenience wrappers around dbus 
-to ease integrating dbus with EFL based applications."

@@ -1,6 +1,0 @@
-category: X11
-requires: libedbus1 libdbus1-devel libecore-devel libeina-devel libevas-devel
-external-source: e_dbus
-sdesc: "Enlightenment D-Bus wrapper library (development)"
-ldesc: "This is the start of some basic convenience wrappers around dbus 
-to ease integrating dbus with EFL based applications."
