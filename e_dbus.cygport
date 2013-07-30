@@ -1,15 +1,17 @@
 NAME="e_dbus"
-VERSION=1.7.4
+VERSION=1.7.7
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="Enlightenment D-Bus bindings"
 DESCRIPTION="This is the start of some basic convenience wrappers around D-Bus
 to ease integrating dbus with EFL based applications."
 HOMEPAGE="http://www.enlightenment.org/"
-SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+SRC_URI="http://download.enlightenment.org/releases/e_dbus-${VERSION}.tar.bz2"
 PATCH_URI="1.0.1-no-undefined.patch"
 
-PKG_NAMES="${PN} libedbus1 libedbus-devel"
+PKG_NAMES="${NAME} libedbus1 libedbus-devel"
+e_dbus_CATEGORY="X11"
+e_dbus_SUMMARY=${SUMMARY/bindings/utilities}
 e_dbus_CONTENTS="usr/bin/*.exe usr/share/"
 libedbus1_CONTENTS="usr/bin/*-1.dll"
 libedbus_devel_CONTENTS="usr/include/ usr/lib/"
